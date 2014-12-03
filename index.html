@@ -52,25 +52,40 @@ http.send("uname="+document.getElementById('uname').value+"&"+"pass="+document.g
 	background-color: #FFFFFF;
 	display:none
 }
+body {
+	background-color: #CCC;
+}
+#apDiv1 {
+	position: absolute;
+	left: 133px;
+	top: 215px;
+	width: 49px;
+	height: 72px;
+	z-index: 0;
+}
 </style>
+<meta charset="utf-8">
 </head>
 
 <body>
 <div id="datadiv">Welcome, <span id="userdata"></span></div>
+<div id="apDiv1"><img src="http://www.aginova.info/phonegap/logo.png" width="48" height="64"></div>
 <div id="formdata">
 <form name="form1" method="post" >
   <p>
     <label for="uname">Username:</label>
-    <input type="text" name="uname" id="uname">
+    <br>
+<input type="text" name="uname"  data-shadow="true" id="uname">
   </p>
   <p>
     <label for="pass">Password:</label>
+    <br>
     <input type="password" name="pass" id="pass">
   </p>
   <p>
     <input type="button" onClick="pushdata()" name="button" id="button" value="Login">
   </p>
-</form>    <span id="results" style="color:red">Authorization Required</span><br>
+</form>    <span id="results"  style="color:red; text-align:center">Authorization Required</span><br>
 
 </div>
 </body>
