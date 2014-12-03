@@ -2,33 +2,22 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Order Count</title>
-<script>
-var http = false;
-if(navigator.appName == "Microsoft Internet Explorer") {
-  http = new ActiveXObject("Microsoft.XMLHTTP");
-} else {
-  http =  new XMLHttpRequest();
-}
-function getdata(myval) {
-	document.getElementById('img_pro').style.visibility='visible'
-  http.open("GET", "http://www.aginova.info/phonegap/getdata.php", true);
-  http.onreadystatechange=function() {
-    if(http.readyState == 4) {
-      document.getElementById('results').innerHTML =http.responseText;
-    }
-  }
-    http.send(null);
- 
-}
-
-
-</script>
+<title>Untitled Document</title>
 </head>
 
 <body>
 <form name="form1" method="post" action="">
-<input name="orders" onClick="getdata()" type="button" value="Get New Orders Count"> : <span id="results"><img style="visibility:hidden" id="img_pro" src="http://www.aginova.info/phonegap/process.gif" width="16"></span>
+  <p>
+    <label for="uname">Username:</label>
+    <input type="text" name="uname" id="uname">
+  </p>
+  <p>
+    <label for="pass">Password:</label>
+    <input type="password" name="pass" id="pass">
+  </p>
+  <p>
+    <input type="submit" name="button" id="button" value="Submit">
+  </p>
 </form>
 </body>
 </html>
