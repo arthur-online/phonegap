@@ -1,12 +1,60 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+<script>
+var http = false; 
+ 
+function pushdata(myval) {
+  http =  new XMLHttpRequest();
+	
+http.open("POST","login.php",true);
+
+http.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+http.setRequestHeader("Connection", "close");
+
+
+http.onreadystatechange = function() {//Call a function when the state changes.
+    if(http.readyState == 4 && http.status == 200) {
+		if(http.responseText=='Success') 
+		{
+	document.getElementById('formdata').style.display='none';
+	document.getElementById('datadiv').style.display='block';
+		}
+		else {
+		      document.getElementById('results').innerHTML =http.responseText;
+		}
+			  
+
+    }
+}
+
+http.send("uname="+document.getElementById('uname').value+"&"+"pass="+document.getElementById('pass').value);
+ 
+ 
+
+}
+
+
+</script>
+
+<style type="text/css">
+#datadiv {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 230px;
+	height: 293px;
+	z-index: 1;
+	background-color: #FFFFFF;
+	display:none
+}
+</style>
 </head>
 
 <body>
-<form name="form1" method="post" action="">
+<div id="datadiv">Welcome</div>
+<div id="formdata">
+<form name="form1" method="post" >
   <p>
     <label for="uname">Username:</label>
     <input type="text" name="uname" id="uname">
@@ -16,8 +64,10 @@
     <input type="password" name="pass" id="pass">
   </p>
   <p>
-    <input type="submit" name="button" id="button" value="Submit">
+    <input type="button" onClick="pushdata()" name="button" id="button" value="Login">
   </p>
-</form>
+</form>    <span id="results" style="color:red">Authorization Required</span><br>
+
+</div>
 </body>
 </html>
