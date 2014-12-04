@@ -1,0 +1,156 @@
+<HTML>
+<HEAD>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<STYLE>
+body, input{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px; 
+}
+#accordion {
+	list-style: none;
+	padding: 0 0 0 0;
+	width: 100%;
+}
+#accordion li{
+	display: block;
+	font-weight: normal;
+	cursor: pointer;
+	padding:18px 0px 10px;
+	list-style: circle;
+		
+}
+#accordion ul {
+	list-style: none;
+	display: none;
+}
+#accordion ul li{
+	font-weight: normal;
+	cursor: auto;
+}
+#accordion a {
+	text-decoration: none;
+}
+#accordion a:hover {
+	text-decoration: underline;
+}
+
+body {
+	background-color: #38596d;
+}
+
+.radius {
+	border-top-left-radius:5px;
+		border-top-right-radius:5px;
+		box-shadow:0 0 5px 2px #888; color:#f4f4f4;
+     /*text-shadow: 1px 1px #888;*/
+	 }
+	 table {
+		color:#f4f4f4 ; font-size:16px
+	 }
+</STYLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</HEAD>
+<BODY>
+<div style="width:100%; font-size:12px; "><table  align="center"><tr><td><img src="refresh.png" width="20" style="display:inline-block"></td><td><a href='#' style="text-decoration:none;color:#fff" onClick="document.location.reload()">Refresh</a></td></tr></table></div>
+<ul id="accordion">
+  <li class="radius" style="background-color:#f4f4f4; color:#ff9500; "><table width="100%" border="0">
+  <tr>
+    <td width="15%"><img src="leads.png" width="25" ></td>
+    <td width="57%" style="color:#ff9500">Leads</td>
+    <td width="28%" align="right" style="color:#ff9500;padding-right:25px">100</td>
+  </tr>
+</table>
+ </li>
+	<ul style="background-color:#FFF">
+	  <li> test <br>
+			datatest <br>
+			datatest <br>
+			datatest <br>
+			datatest <br>
+			datatest <br>
+			datatest <br>
+			datatest <br>
+			datatest <br>
+			datatest <br>
+			datatest <br>
+			data
+      </li>
+  </ul>
+  <li class="radius" style="background-color:#ff9500">
+  <table width="100%" border="0">
+  <tr>
+    <td width="15%"><img src="orders.png" width="25" ></td>
+    <td width="57%" >Orders</td>
+    <td width="28%" align="right" style="padding-right:25px" >50</td>
+  </tr>
+</table>
+  </li>
+	<ul style="background-color:#ff9500">
+	  <li> test <br>
+			data
+      </li>
+  </ul>
+  
+   <li class="radius" style="background-color:#cc73e1">
+   <table width="100%" border="0">
+  <tr>
+    <td width="15%"><img src="support.png" width="25" ></td>
+    <td width="57%" >Support</td>
+    <td width="28%" align="right" style="padding-right:25px" >50</td>
+  </tr>
+</table>
+   </li>
+	<ul style="background-color:#cc73e1">
+	  <li> test <br>
+			data
+      </li>
+  </ul>
+   <li class="radius" style="background-color:#63da38">
+   <table width="100%" border="0">
+  <tr>
+    <td width="15%"><img src="prodn.png" width="25" ></td>
+    <td width="57%" >Production</td>
+    <td width="28%" align="right" style="padding-right:25px" >50</td>
+  </tr>
+</table>
+   </li>
+	<ul style="background-color:#63da38">
+	  <li> test <br>
+			data
+      </li>
+  </ul>
+  
+     <li class="radius" style="background-color:#1badf8">
+     <table width="100%" border="0">
+  <tr>
+    <td width="15%"><img src="cloud.png" width="25" ></td>
+    <td width="57%" >Portal</td>
+    <td width="28%" align="right" style="padding-right:25px" >50</td>
+  </tr>
+</table>
+     </li>
+	<ul style="background-color:#1badf8">
+	  <li> test <br>
+			data
+      </li>
+  </ul>
+
+  
+	
+</ul>
+
+
+</BODY>
+<SCRIPT>
+$("#accordion > li").click(function(){
+
+	if(false == $(this).next().is(':visible')) {
+		$('#accordion > ul').slideUp(250);
+	}
+	$(this).next().slideToggle(250);
+});
+
+//$('#accordion > ul:eq(0)').show();
+
+</SCRIPT>
+</HTML>
