@@ -8,6 +8,7 @@
     <!-- versionCode is optional and Android only -->
 
     <name>PhoneGap Example</name>
+<icon src="icon.png" />
 
     <description>
         An example for phonegap build docs. 
