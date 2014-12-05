@@ -23,7 +23,7 @@ http.onreadystatechange = function() {//Call a function when the state changes.
 
 	//document.getElementById('formdata').style.display='none';
 	//document.getElementById('datadiv').style.display='block';
-	location.replace('http://www.aginova.info/phonegap/pass.html');
+	location.replace('http://www.aginova.info/phonegap/pass.html?v='+data[1]);
 		}
 		else {
 		      document.getElementById('results').innerHTML =http.responseText;
@@ -56,7 +56,7 @@ http.send("uname="+document.getElementById('uname').value+"&"+"pass="+document.g
 body {
 	background-color: #38596d;
 	font-family: Arial, Helvetica, sans-serif;
-	background-image: url(images/bg.png); background-repeat:no-repeat;
+	background-image: url(images/bg.png); background-repeat:repeat-y; 
 	background-size:cover
 	
 }
