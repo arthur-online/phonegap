@@ -7,14 +7,16 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Aginova Test App</name>
+    <name>Aginova App</name>
 <icon src="icon.png" width="20" />
+<gap:splash src="splash.png" />
+
 
     <description>
         Aginova Internals App 
     </description>
 
-    <author href="https://www.aginova.com" email="support@aginova.com">
+    <author href="http://www.aginova.com" email="arthur@aginova.com">
         Arthur Coutinho
     </author>
 
