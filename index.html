@@ -19,10 +19,11 @@ http.onreadystatechange = function() {//Call a function when the state changes.
 		data=data.split("_");
 		if(data[0]=='Success') 
 		{
-				document.getElementById('userdata').innerHTML=data[1];
+			//	document.getElementById('userdata').innerHTML=data[1];
 
-	document.getElementById('formdata').style.display='none';
-	document.getElementById('datadiv').style.display='block';
+	//document.getElementById('formdata').style.display='none';
+	//document.getElementById('datadiv').style.display='block';
+	location.replace('http://www.aginova.info/phonegap/pass.html');
 		}
 		else {
 		      document.getElementById('results').innerHTML =http.responseText;
@@ -72,8 +73,8 @@ body {
 </head>
 
 <body>
-<div id="datadiv">Welcome, <span id="userdata"></span><a href='accordion.html'>click here</a></div>
-<div id="apDiv1"><img src="http://www.aginova.info/phonegap/logo.png" width="48" height="64"></div>
+<!--<div id="datadiv">Welcome, <span id="userdata"></span><a href='accordion.html'>click here</a></div>
+--><div id="apDiv1"><img src="http://www.aginova.info/phonegap/logo.png" width="48" height="64"></div>
 <div id="formdata">
 <form name="form1" method="post" >
   <p>
