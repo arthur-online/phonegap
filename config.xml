@@ -7,11 +7,11 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>PhoneGap Example</name>
-<icon src="icon.png" />
+    <name>Aginova Test App</name>
+<icon src="icon.png" width="20" />
 
     <description>
-        An example for phonegap build docs. 
+        Aginova Internals App 
     </description>
 
     <author href="https://www.aginova.com" email="support@aginova.com">
