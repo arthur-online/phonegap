@@ -8,7 +8,7 @@ body, input{
 }
 #accordion {
 	list-style: none;
-	padding: 0 0 0 0;
+	padding: 0px;
 	width: 100%;
 }
 #accordion li{
@@ -41,7 +41,7 @@ body {
 .radius {
 	border-top-left-radius:10px;
 		border-top-right-radius:10px;
-		box-shadow:0 0 1px 2px #888; color:#f4f4f4;
+		box-shadow:0 0 1px 1px #999; color:#f4f4f4;
      /*text-shadow: 1px 1px #888;*/
 	 }
 	 table {
@@ -51,7 +51,13 @@ body {
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </HEAD>
 <BODY>
-<div style="width:100%; font-size:12px; "><table  align="center"><tr><td><img src="images/refresh.png" width="20" style="display:inline-block"></td><td><a href='#' style="text-decoration:none;color:#fff" onClick="document.location.reload()">Refresh</a></td></tr></table></div>
+<div style="width:100%; font-size:12px; "><table width="100%"  align="center"><tr><td width="37%"><?php echo "Hi,".$_GET['id'] ?></td>
+  <td width="4%">&nbsp;</td>
+  <td width="54%" align="right"><img src="images/refresh.png" alt="" width="15"></td>
+<td width="5%" align="left"><a href='#' style="text-decoration:none;color:#fff" onClick="document.location.reload()">Refresh</a></td>
+<td width="0%" align="right">&nbsp;</td>
+</tr>
+</table></div>
 <ul id="accordion">
   <li class="radius" style="background-color:#f4f4f4; color:#ff9500; "><table width="100%" border="0">
   <tr>
@@ -61,19 +67,11 @@ body {
   </tr>
 </table>
  </li>
-	<ul style="background-color:#FFF">
+	<ul style="background-color:#f4f4f4">
 	  <li> test <br>
 			datatest <br>
 			datatest <br>
 			datatest <br>
-			datatest <br>
-			datatest <br>
-			datatest <br>
-			datatest <br>
-			datatest <br>
-			datatest <br>
-			datatest <br>
-			data
       </li>
   </ul>
   <li class="radius" style="background-color:#ff9500">
