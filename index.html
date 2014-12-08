@@ -1,11 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css">
-
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 <script>
 
 $(function() {
@@ -94,17 +92,17 @@ body {
 --><div id="apDiv1"><img src="http://www.aginova.info/phonegap/logo.png" width="48" height="64"></div>
 <div id="formdata">
 <form name="form1" method="post" >
-  <p>
+   <div class="ui-widget"><p>
     <label for="uname" style="color:#FFF">Username:</label>
     <br>
-    <div class="ui-widget">
-<input type="text" name="uname"   id="uname"></div>
+   
+<input type="text" name="uname"   id="uname">
   </p>
   <p>
     <label for="pass" style="color:#FFF">Password:</label>
     <br>
     <input type="password" name="pass" id="pass">
-  </p>
+  </p></div>
   <p>
     <input type="button" onClick="pushdata()" name="button" id="button" value="Login">
   </p>
