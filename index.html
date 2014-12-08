@@ -4,8 +4,10 @@
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-<script>
+<script src="http://aginova.info/phonegap/data.js"></script>
 
+<script>
+alert(data)
 $(function() {
 var availableTags = [
 "ActionScript",
@@ -92,17 +94,17 @@ body {
 --><div id="apDiv1"><img src="http://www.aginova.info/phonegap/logo.png" width="48" height="64"></div>
 <div id="formdata">
 <form name="form1" method="post" >
-   <div class="ui-widget"><p>
+  <p>
     <label for="uname" style="color:#FFF">Username:</label>
     <br>
-   
-<input type="text" name="uname"   id="uname">
+    <div class="ui-widget">
+<input type="text" name="uname"   id="uname"></div>
   </p>
   <p>
     <label for="pass" style="color:#FFF">Password:</label>
     <br>
     <input type="password" name="pass" id="pass">
-  </p></div>
+  </p>
   <p>
     <input type="button" onClick="pushdata()" name="button" id="button" value="Login">
   </p>
