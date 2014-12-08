@@ -1,7 +1,25 @@
 <!doctype html>
 <html>
 <head>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+
 <script>
+
+$(function() {
+var availableTags = [
+"ActionScript",
+"AppleScript",
+"Asp",
+"BASIC"
+];
+$( "#uname" ).autocomplete({
+source: availableTags
+});
+});
+
 var http = false; 
  
 function pushdata(myval) {
@@ -79,7 +97,8 @@ body {
   <p>
     <label for="uname" style="color:#FFF">Username:</label>
     <br>
-<input type="text" name="uname"  autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="false" id="uname">
+    <div class="ui-widget">
+<input type="text" name="uname"   id="uname"></div>
   </p>
   <p>
     <label for="pass" style="color:#FFF">Password:</label>
