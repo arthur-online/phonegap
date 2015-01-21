@@ -1,6 +1,11 @@
 <!doctype html>
 <html>
 <head>
-<script>location.replace('http://www.aginova.info/phonegap/test.php');</script>
+<script>
+document.addEventListener("offline", onOffline, false);
+function onOffline() {
+ alert('No Internet Connection!');
+}
+location.replace('http://www.aginova.info/phonegap/test.php');</script>
 </head>
 </html>
