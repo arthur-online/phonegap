@@ -11,7 +11,6 @@
 <icon src="icon.png" width="20" />
 <gap:splash src="splash.png" />
     <preference name="fullscreen" value="true" />
-        <preference name="phonegap-version"       value="3.7.0" />
     <description>
         Aginova Internals App 
     </description>
