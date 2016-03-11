@@ -3,11 +3,11 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "aginova.phonegap.app"
         versionCode = "10" 
-        version     = "1.0.0" >
+        version     = "1.0.4" >
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Aginova App</name>
+    <name>Aginova Internals App</name>
 <icon src="icon.png" width="20" />
 <gap:splash src="splash.png" />
     <preference name="fullscreen" value="true" />
